@@ -29,7 +29,7 @@ public class CardTrick {
         String s1 = input.next().toLowerCase();
         System.out.print("Enter a card value  1 = ace to 13 = king: ");
         int s2 = input.nextInt();
-        
+        // add some comment
         boolean correctSuit;
         boolean correctValue;
         boolean cardMatch;
