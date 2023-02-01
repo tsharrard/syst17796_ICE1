@@ -7,7 +7,7 @@ package exercise1;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 25, 2022 
- * @author Scott Sharrard - Feb 2022
+ * @author Scott Sharrard - Feb 2022 - New
  */
 public class CardTrick {
     
