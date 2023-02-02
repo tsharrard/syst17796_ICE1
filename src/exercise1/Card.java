@@ -9,17 +9,32 @@ package exercise1;
  * add your name as a modifier.
  * @author dancye
  * @author Paul Bonenfant May 2020
+ * @author Scott Sharrard Feb 2023
  */
 public class Card {
 
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
+   private String suit;         //clubs, spades, diamonds, hearts
+   private int value;           //1-13
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   public static final String [] SUITS = {"hearts", "diamonds", "spades", "clubs"};
     /**
      * @return the suit
      */
-    public String getSuit() {
+   public Card(int value, int suitValue){
+       
+       this.value=value;
+     
+        switch(suitValue){
+            case 1: suit="hearts"; break;
+            case 2: suit="diamonds"; break;
+            case 3: suit="spades"; break;
+            case 4: suit="clubs"; break;
+             }
+ 
+   }
+   
+   
+   public String getSuit() {
         return suit;
     }
 
@@ -40,7 +55,7 @@ public class Card {
     /**
      * @param value the value to set
      */
-    public void setValue(int value) {
-        this.value = value;
+    public void setValue(int value) {    
+            this.value = value;
     }  
 }
